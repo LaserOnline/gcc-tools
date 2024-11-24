@@ -28,7 +28,7 @@ sudo update-alternatives --install /usr/local/bin/gcc gcc /opt/homebrew/bin/gcc-
 
 5. สลับเวอร์ชัน gcc:
 ```
-sudo alternatives --config gcc
+sudo update-alternatives --config gcc
 ```
 
 6. update
@@ -39,7 +39,7 @@ gcc --version
 ---
 1. ลบ Symlink เดิม
 ```
-sudo update-alternatives --remove gcc /usr/bin/gcc
+sudo update-alternatives --remove gcc /opt/homebrew/bin/gcc-14
 ```
 
 2. สร้าง Symlink ใหม่
